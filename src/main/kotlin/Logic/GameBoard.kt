@@ -40,7 +40,6 @@ class GameBoard(
                 if (!map.containsKey(Coordinate(x, y))) map[Coordinate(x, y)] = null
             }
         }
-        println("$size : ${map.size}")
     }
 
     private fun checkWin(x: Int, y: Int, id: Int): Boolean {
@@ -58,7 +57,6 @@ class GameBoard(
                 return false
             }
         }
-        println("winner")
         return true
     }
 }
